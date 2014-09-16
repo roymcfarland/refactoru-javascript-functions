@@ -4,6 +4,7 @@
 // };
 // tripleFive()
 
+
 // NUMBER 1(b)
 // for (var i=0; i<3; i++) {
 // 	console.log("Five!");
@@ -68,42 +69,24 @@
 // console.log(sun("catapult"));
 
 // NUMBER 9
-var tiny = function(x) {
-	if (x < 1 && x > 0) {
-		return "true";
-	} else {
-		return "false";
-	};
+// var tiny = function(x) {
+// 	if (x < 1 && x > 0) {
+// 		return "true";
+// 	} else {
+// 		return "false";
+// 	};
+// };
+// console.log(tiny(0.3));
+// console.log(tiny(14));
+// console.log(tiny(-5));
+
+// NUMBER 10
+var getSeconds = function(time) {
+	var timesplit = time.split(":");
+	var timemins = +timesplit[0];
+	var timesecs = +timesplit[1];
+	return 60 * timemins + timesecs;
 };
-console.log(tiny(0.3));
-console.log(tiny(14));
-console.log(tiny(-5));
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+console.log(getSeconds("01:30"));
+console.log(getSeconds("10:25"));
 
